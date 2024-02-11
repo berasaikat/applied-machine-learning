@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/Coding/Applied%20Machine%20Learning/02-experimental-tracking/src/mlruns/0/91b78f3e36944d03b717f193d9870bad/artifacts
+end_time: 1707637906822
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 91b78f3e36944d03b717f193d9870bad
+run_name: fortunate-hare-118
+run_uuid: 91b78f3e36944d03b717f193d9870bad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707637878357
+status: 3
+tags: []
+user_id: LENOVO
