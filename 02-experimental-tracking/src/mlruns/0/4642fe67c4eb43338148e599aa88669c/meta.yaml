@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/Coding/Applied%20Machine%20Learning/02-experimental-tracking/src/mlruns/0/4642fe67c4eb43338148e599aa88669c/artifacts
+end_time: 1707808733252
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4642fe67c4eb43338148e599aa88669c
+run_name: bright-stork-534
+run_uuid: 4642fe67c4eb43338148e599aa88669c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707808695116
+status: 3
+tags: []
+user_id: LENOVO

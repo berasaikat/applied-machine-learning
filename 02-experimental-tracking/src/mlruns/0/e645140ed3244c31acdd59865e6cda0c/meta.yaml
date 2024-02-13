@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/Coding/Applied%20Machine%20Learning/02-experimental-tracking/src/mlruns/0/e645140ed3244c31acdd59865e6cda0c/artifacts
+end_time: 1707808428086
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e645140ed3244c31acdd59865e6cda0c
+run_name: logistic_regression_nested_run
+run_uuid: e645140ed3244c31acdd59865e6cda0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707808422000
+status: 3
+tags: []
+user_id: LENOVO
