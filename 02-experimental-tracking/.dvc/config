@@ -2,4 +2,4 @@
     remote = cloud
     autostage = true
 ['remote "cloud"']
-    url = ../gdrive:/1pVsJPiHa4AJwwRZnILixgvp4C93BSB6Y
+    url = gdrive://1pVsJPiHa4AJwwRZnILixgvp4C93BSB6Y
