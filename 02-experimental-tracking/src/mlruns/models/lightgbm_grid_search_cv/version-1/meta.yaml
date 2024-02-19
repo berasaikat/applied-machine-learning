@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708381367051
+current_stage: None
+description: null
+last_updated_timestamp: 1708381367051
+name: lightgbm_grid_search_cv
+run_id: 5d95d4a7320f41a9a6bab00a7fdb1a1f
+run_link: null
+source: runs:/5d95d4a7320f41a9a6bab00a7fdb1a1f/lightgbm_grid_search_cv_best_model
+status: READY
+status_message: null
+storage_location: runs:/5d95d4a7320f41a9a6bab00a7fdb1a1f/lightgbm_grid_search_cv_best_model
+user_id: null
+version: 1

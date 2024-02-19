@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/Coding/Applied%20Machine%20Learning/02-experimental-tracking/src/mlruns/690074325115179996/c041bd17e9134607bf1671556baaf31a/artifacts
+end_time: 1708379680107
+entry_point_name: ''
+experiment_id: '690074325115179996'
+lifecycle_stage: active
+run_id: c041bd17e9134607bf1671556baaf31a
+run_name: experiment01-run02
+run_uuid: c041bd17e9134607bf1671556baaf31a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1708379657125
+status: 3
+tags: []
+user_id: LENOVO

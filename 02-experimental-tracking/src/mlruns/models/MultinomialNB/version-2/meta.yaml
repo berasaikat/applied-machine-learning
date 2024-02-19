@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708379680064
+current_stage: None
+description: null
+last_updated_timestamp: 1708379680064
+name: MultinomialNB
+run_id: c041bd17e9134607bf1671556baaf31a
+run_link: null
+source: runs:/c041bd17e9134607bf1671556baaf31a/MultinomialNB
+status: READY
+status_message: null
+storage_location: runs:/c041bd17e9134607bf1671556baaf31a/MultinomialNB
+user_id: null
+version: 2

@@ -1,0 +1,7 @@
+artifact_location: file:///e:/Coding/Applied%20Machine%20Learning/02-experimental-tracking/src/mlruns/400935689654729131
+creation_time: 1708380542167
+experiment_id: '400935689654729131'
+last_update_time: 1708380542167
+lifecycle_stage: active
+name: (GridSearchCV) Model Version Control and Experiment Tracking Email for Spam
+  Classification Problem with Hyperparameter Tuning
