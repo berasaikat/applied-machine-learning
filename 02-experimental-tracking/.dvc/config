@@ -1,0 +1,4 @@
+[core]
+    remote = cloud
+['remote "cloud"']
+    url = ../gdrive:/1pVsJPiHa4AJwwRZnILixgvp4C93BSB6Y
