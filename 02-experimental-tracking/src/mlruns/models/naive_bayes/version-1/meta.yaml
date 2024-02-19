@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708378485368
+current_stage: None
+description: null
+last_updated_timestamp: 1708378485368
+name: naive_bayes
+run_id: 7ea3f85415fe4e7ab5a9c168fdd2102c
+run_link: null
+source: runs:/7ea3f85415fe4e7ab5a9c168fdd2102c/naive_bayes_best_model
+status: READY
+status_message: null
+storage_location: runs:/7ea3f85415fe4e7ab5a9c168fdd2102c/naive_bayes_best_model
+user_id: null
+version: 1

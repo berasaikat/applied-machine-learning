@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708377018872
+current_stage: None
+description: null
+last_updated_timestamp: 1708377018872
+name: LGBMClassifier
+run_id: ad693cf74f204a758cbc59af54f7b1ea
+run_link: null
+source: runs:/ad693cf74f204a758cbc59af54f7b1ea/LGBMClassifier
+status: READY
+status_message: null
+storage_location: runs:/ad693cf74f204a758cbc59af54f7b1ea/LGBMClassifier
+user_id: null
+version: 1

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708378819463
+current_stage: None
+description: null
+last_updated_timestamp: 1708378819463
+name: LogisticRegression
+run_id: 66242216754e456e81c1c169f5b1ee4a
+run_link: null
+source: runs:/66242216754e456e81c1c169f5b1ee4a/LogisticRegression
+status: READY
+status_message: null
+storage_location: runs:/66242216754e456e81c1c169f5b1ee4a/LogisticRegression
+user_id: null
+version: 2
