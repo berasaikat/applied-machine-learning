@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708406278511
+current_stage: None
+description: null
+last_updated_timestamp: 1708406278511
+name: naive_bayes_grid_search_cv
+run_id: dbea0beb1ac247f2b463deba298340da
+run_link: null
+source: runs:/dbea0beb1ac247f2b463deba298340da/naive_bayes_grid_search_cv_best_model
+status: READY
+status_message: null
+storage_location: runs:/dbea0beb1ac247f2b463deba298340da/naive_bayes_grid_search_cv_best_model
+user_id: null
+version: 2

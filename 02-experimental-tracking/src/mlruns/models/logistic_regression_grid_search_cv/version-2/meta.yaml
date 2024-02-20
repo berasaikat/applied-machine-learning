@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1708406270917
+current_stage: None
+description: null
+last_updated_timestamp: 1708406270917
+name: logistic_regression_grid_search_cv
+run_id: dbea0beb1ac247f2b463deba298340da
+run_link: null
+source: runs:/dbea0beb1ac247f2b463deba298340da/logistic_regression_grid_search_cv_best_model
+status: READY
+status_message: null
+storage_location: runs:/dbea0beb1ac247f2b463deba298340da/logistic_regression_grid_search_cv_best_model
+user_id: null
+version: 2
