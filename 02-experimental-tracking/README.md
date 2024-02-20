@@ -22,32 +22,32 @@ The repository contains the following files and directories:
 Below are screenshots from the MLflow UI:
 
 ### Homepage Overview
-![Homepage Overview](images/image7.png)
-*This screenshot shows the homepage of Mlflow ui where it list all the experiments.*
+![Homepage Overview](images/image7.jpg)
+*This screenshot provides an overview of the MLflow UI homepage, displaying a list of all experiments conducted.*
 
 ### Run Details
-![Run Details](images/image6.png)
-*This screenshot shows all the Run details with 'Run Id', 'Run Name', 'Start Time', 'End Time', 'Duration' and 'Experiment Name'.*
+![Run Details](images/image6.jpg)
+*This screenshot presents detailed information about each run, including 'Run Id', 'Run Name', 'Start Time', 'End Time', 'Duration', and 'Experiment Name'.*
 
-### Homepage Overview
-![Homepage Overview](images/image7.png)
-*This screenshot shows the homepage of Mlflow ui where it list all the experiments.*
+### Parameters Details
+![Parameters Details](images/image5.jpg)
+*This screenshot showcases the parameter details of various models, providing insights into the configurations used during experimentation.*
 
-### Homepage Overview
-![Homepage Overview](images/image7.png)
-*This screenshot shows the homepage of Mlflow ui where it list all the experiments.*
+### Performance Metrics
+![Performance Metrics](images/image4.jpg)
+*This screenshot illustrates the performance metric, i.e. AUCPR, of all models across multiple runs, aiding in the comparison of model performance.*
 
-### Homepage Overview
-![Homepage Overview](images/image7.png)
-*This screenshot shows the homepage of Mlflow ui where it list all the experiments.*
+### Registered Models
+![Registered Models](images/image3.jpg)
+*This screenshot displays a list of registered models along with their latest versions.*
 
-### Homepage Overview
-![Homepage Overview](images/image7.png)
-*This screenshot shows the homepage of Mlflow ui where it list all the experiments.*
+### AUCPR of Logistic Regression
+![AUCPR of Logistic Regression](images/image2.jpg)
+*This screenshot exhibits a bar graph depicting the consistent AUCPR scores of the Logistic Regression model with hyperparameter tuning across different runs.*
 
-### Homepage Overview
-![Homepage Overview](images/image7.png)
-*This screenshot shows the homepage of Mlflow ui where it list all the experiments.*
+### List of model versions lightgbm
+![List of model versions lightgbm](images/image1.jpg)
+*This screenshot presents the list of versions of the lightgbm model along with their registration status, providing an overview of model evolution over time.*
 
 ## Running the Notebooks
 
