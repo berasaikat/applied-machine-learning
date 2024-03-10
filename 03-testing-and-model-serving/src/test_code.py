@@ -1,17 +1,9 @@
-import os
 import unittest
 import joblib
-import numpy as np
-from sklearn.base import BaseEstimator
 from score import score
-import multiprocessing
 import requests
-import os
 import time
-import signal
-from flask import Flask, jsonify, request
-from score import score
-import threading
+import subprocess
 
 class TestScoring(unittest.TestCase):
    def setUp(self):
@@ -78,49 +70,22 @@ class TestScoring(unittest.TestCase):
        prediction, _ = score(self.non_spam_text, self.model, threshold)
        self.assertFalse(prediction)
 
-   def test_flask_app(self):
-        # Create an event for stopping the Flask thread
-        stop_event = threading.Event()
+   def test_flask(self):
+        # Test Flask integration
+        server_process = subprocess.Popen(['python', 'app.py'])
+        time.sleep(2)  # Wait for server to start
 
-        # Start the Flask app in a separate thread
-        flask_thread = threading.Thread(target=self.run_flask_app, args=(stop_event,))
-        flask_thread.start()
+        url = 'http://localhost:5000/score'
+        data = {'text': 'This is a test text.'}
+        response = requests.post(url, json=data)
+        prediction = response.json()['prediction']
+        propensity = response.json()['propensity']
 
-        try:
-            # Wait for the app to start
-            time.sleep(2)
+        server_process.terminate()
+        server_process.wait()
 
-            # Test the /score endpoint
-            text = "This is a test text."
-            url = "http://localhost:5000/score"
-            response = requests.post(url, json={"text": text})
-            self.assertEqual(response.status_code, 200)
-            data = response.json()
-            self.assertIn("prediction", data)
-            self.assertIn("propensity", data)
-        finally:
-            # Signal the Flask thread to stop
-            stop_event.set()
-            flask_thread.join()
-
-   def run_flask_app(self, stop_event):
-        # Load the saved model
-        model_path = r"E:\Coding\Applied Machine Learning\03-testing-and-model-serving\model\lightgbm_model.pkl"
-        model = joblib.load(model_path)
-
-        # Create the Flask app
-        app = Flask(__name__)
-
-        @app.route("/score", methods=["POST"])
-        def score_text():
-            text = request.json["text"]
-            threshold = 0.5
-            prediction, propensity = score(text, model, threshold)
-            return jsonify({"prediction": bool(prediction), "propensity": float(propensity)})
-
-        # Run the Flask app until the stop_event is set
-        while not stop_event.is_set():
-            app.run(debug=False, use_reloader=False)
+        self.assertIn(prediction, [True, False])
+        self.assertIsInstance(propensity, float)
 
 if __name__ == "__main__":
    unittest.main()

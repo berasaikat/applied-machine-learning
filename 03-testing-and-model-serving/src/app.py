@@ -10,10 +10,10 @@ model = joblib.load(model_path)
 
 @app.route("/score", methods=["POST"])
 def score_text():
-    text = request.json["text"]
+    text = request.get_json()["text"]
     threshold = 0.5
     prediction, propensity = score(text, model, threshold)
-    return jsonify({"prediction": bool(prediction), "propensity": float(propensity)})
+    return jsonify({"prediction": prediction, "propensity": propensity})
 
 if __name__ == "__main__":
     app.run(debug=True)

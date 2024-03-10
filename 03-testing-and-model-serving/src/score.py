@@ -1,4 +1,3 @@
-import joblib
 import pandas as pd
 from sklearn.base import BaseEstimator
 
@@ -14,6 +13,6 @@ def score(text: str, model: BaseEstimator, threshold: float):
     propensity = probabilities[0, 1]
 
     # Make the final prediction based on the threshold
-    prediction = propensity >= threshold
+    prediction = bool(propensity >= threshold)
 
     return prediction, propensity
