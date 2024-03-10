@@ -4,6 +4,7 @@ from score import score
 import requests
 import time
 import subprocess
+from app import app
 
 class TestScoring(unittest.TestCase):
    def setUp(self):
