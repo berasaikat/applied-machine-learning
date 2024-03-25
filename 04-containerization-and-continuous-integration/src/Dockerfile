@@ -8,9 +8,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y libgomp1
 
 # Copy the application code, model and requirements.txt into the container
-COPY src/app.py src/score.py ./
+COPY app.py score.py ./
 COPY model/lightgbm_model.pkl ./model/
-COPY src/requirements.txt ./
+COPY requirements.txt ./
 
 # Install the required dependencies
 RUN pip install --no-cache-dir -r requirements.txt

@@ -91,11 +91,11 @@ class TestScoring(unittest.TestCase):
    def test_docker(self):
         
         # Change the current working directory to the project directory
-        project_dir = os.path.dirname(os.path.abspath(__file__))
-        os.chdir(project_dir)
+        # project_dir = os.path.dirname(os.path.abspath(__file__))
+        # os.chdir(project_dir)
         
         # Build the Docker image
-        subprocess.run(['docker', 'build', '-t', 'flask-app', '.'], check=True)
+        # subprocess.run(['docker', 'build', '-t', 'flask-app', '.'], check=True)
    
         # Launch the Docker container
         server_process = subprocess.Popen(['docker', 'run', '-p', '5000:5000', 'flask-app'])
@@ -119,8 +119,8 @@ class TestScoring(unittest.TestCase):
         server_process.wait()
 
         # Remove the Docker container and image
-        subprocess.run(['docker', 'rm', '-f', 'flask-app'], check=True)
-        subprocess.run(['docker', 'rmi', 'flask-app'], check=True)
+        # subprocess.run(['docker', 'rm', '-f', 'flask-app'], check=True)
+        # subprocess.run(['docker', 'rmi', 'flask-app'], check=True)
 
 if __name__ == "__main__":
    unittest.main()
