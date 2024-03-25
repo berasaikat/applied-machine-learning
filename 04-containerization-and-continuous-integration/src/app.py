@@ -5,7 +5,7 @@ from score import score
 app = Flask(__name__)
 
 # Load the saved model
-model_path = "./model/lightgbm_model.pkl"
+model_path = "./model/lightgbm_model.pkl" 
 model = joblib.load(model_path)
 
 @app.route("/score", methods=["POST"])

@@ -9,7 +9,7 @@ import subprocess
 class TestScoring(unittest.TestCase):
    def setUp(self):
        # Load the saved model
-       self.model_path = r"E:\Coding\Applied Machine Learning\04-containerization-and-continuous-integration\model\lightgbm_model.pkl"
+       self.model_path = "./model/lightgbm_model.pkl"
        self.model = joblib.load(self.model_path)
        self.spam_text = "Free money! Click here to get rich quick!"
        self.non_spam_text = "Hello, how are you doing today?"
@@ -76,7 +76,7 @@ class TestScoring(unittest.TestCase):
         server_process = subprocess.Popen(['python', 'app.py'])
         time.sleep(2)  # Wait for server to start
 
-        url = 'http://localhost:5000/score'
+        url = 'http://127.0.0.1:5000/score'
         data = {'text': 'This is a test text.'}
         response = requests.post(url, json=data)
         prediction = response.json()['prediction']
@@ -89,20 +89,12 @@ class TestScoring(unittest.TestCase):
         self.assertIsInstance(propensity, float)
 
    def test_docker(self):
-        
-        # Change the current working directory to the project directory
-        # project_dir = os.path.dirname(os.path.abspath(__file__))
-        # os.chdir(project_dir)
-        
-        # Build the Docker image
-        # subprocess.run(['docker', 'build', '-t', 'flask-app', '.'], check=True)
-   
         # Launch the Docker container
         server_process = subprocess.Popen(['docker', 'run', '-p', '5000:5000', 'flask-app'])
         time.sleep(2)  # Wait for the server to start
 
         # Send a request to the /score endpoint
-        url = 'http://localhost:5000/score'
+        url = 'http://127.0.0.1:5000/score'
         data = {'text': 'This is a test text.'}
         response = requests.post(url, json=data)
 
@@ -111,16 +103,11 @@ class TestScoring(unittest.TestCase):
         propensity = response.json()['propensity']
         assert isinstance(prediction, bool)
         assert isinstance(propensity, float)
-
         self.assertEqual(response.status_code, 200)
 
         # Stop the Docker container
         server_process.terminate()
         server_process.wait()
-
-        # Remove the Docker container and image
-        # subprocess.run(['docker', 'rm', '-f', 'flask-app'], check=True)
-        # subprocess.run(['docker', 'rmi', 'flask-app'], check=True)
 
 if __name__ == "__main__":
    unittest.main()
