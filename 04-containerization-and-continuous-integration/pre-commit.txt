@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Get the current branch name
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Check if the current branch is 'main'
+if [ "$current_branch" = "main" ]; then
+    echo "Running tests before committing to 'main' branch..."
+    python test_code.py
+    test_result=$?
+
+    if [ $test_result -ne 0 ]; then
+        echo "Tests failed. Commit aborted."
+        exit 1
+    fi
+fi
