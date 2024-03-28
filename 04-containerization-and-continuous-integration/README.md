@@ -35,12 +35,14 @@ project_directory/
 │   ├── test_code.py
 │   ├── model/
 │      └── lightgbm_model.pkl
+│   ├── requirements.txt
 │   ├── Dockerfile
 │   └── coverage.txt
 ├── .git/
 │   └── hooks/
 │       └── pre-commit
-└── README.md
+├── README.md
+└── pre-commit.txt
 ```
 
 ## Dependencies
